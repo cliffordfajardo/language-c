@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.hdl": "hack_asm",
+    "*.svelte": "html",
+    "*.njk": "nunjucks",
+    "my_header.h": "c",
+    "stdio.h": "c",
+    "stdlib.h": "c",
+    "cdefs.h": "c"
+  }
+}

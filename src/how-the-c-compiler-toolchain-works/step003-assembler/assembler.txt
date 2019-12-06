@@ -1,0 +1,120 @@
+     _                                _      _             
+    / \    ___  ___   ___  _ __ ___  | |__  | |  ___  _ __ 
+   / _ \  / __|/ __| / _ \| '_ ` _ \ | '_ \ | | / _ \| '__|
+  / ___ \ \__ \\__ \|  __/| | | | | || |_) || ||  __/| |   
+ /_/   \_\|___/|___/ \___||_| |_| |_||_.__/ |_| \___||_|   
+****************************************************************************************************************
+
+****************************************************************************************************************
+What is an Assembler?
+****************************************************************************************************************
+An assembler is a program that takes assembly language and then translate it into machine code.
+In the context of the c compiler, the assembler does convert our code to binary, but it hasn't been `linked`
+yet. Meaning references to functions, symbols, etc aren't defined yet.
+
+
+****************************************************************************************************************
+Instead running the whole toolchain and compiling to machine code, how do I only run up to the assemmbler?
+
+Reminder of stages: preprocessor -> X -> Compiler -> X -> Assembler -> X -> Linker -> Binary Executable
+****************************************************************************************************************
+If your on mac, read your C compilers man pages. So: `man clang` indicates we need to pass a `-E` flag like so:
+
+```c
+# the `.o` file extension is used to indicate this is an object file. `-o` flag was used to name the ouput file but
+# you can omit the -o flag which will result in the file being named after the programming ending in `.o` file extension.
+# now that the file is in machine code, we can't simply read it in our text editor as we did before. Assembly was still
+# text., but this is not
+
+clang -c my_program.c -o my_program_after_the_assembler.o
+```
+
+
+
+
+****************************************************************************************************************
+When do you actually do assembly programming & what are the pre-requisites?
+****************************************************************************************************************
+When you need VERY fined grained control over CPU operations (pretty rare for most people)
+Prerequisites: 
+requires learning your particular computer's instruction set, since there is a strong 
+correspondance between the assembly and the architectures machine code instruction.s
+
+
+
+
+****************************************************************************************************************
+Why is it called an Assembler? (break down the each word in the term)? ...historical reasoning behind the name?
+****************************************************************************************************************
+The name isn't to important, who invented it could have called it a compiler maybe, but the assembler basically
+assembles the basic computer instructions into patterns of bits that the computer processor can use.
+
+
+
+
+
+****************************************************************************************************************
+At this of writing, what has been your experience/exposure to an Assembler?
+****************************************************************************************************************
+12/06/2019
+I wrote some x86 assembly for the computer architecture class I took at Bradfield a few months ago. It was
+some brief exposure. I want to create my own super simple instruction set for my own fictitous computer
+See bradfield notes for inspiration
+
+
+****************************************************************************************************************
+Whats the dumbest possible way to implement this (try pseudocode or blabber)? Embrace the not knowing - w00t!
+****************************************************************************************************************
+
+****************************************************************************************************************
+Why is it done this way?
+****************************************************************************************************************
+
+****************************************************************************************************************
+What tradeoffs were the designers considering?
+****************************************************************************************************************
+
+****************************************************************************************************************
+What tradeoffs were the designers considering?
+****************************************************************************************************************
+
+
+
+
+  ____       _  __        ____            _        _                _   _____                           _              ___  ____  
+ / ___|  ___| |/ _|      / ___|___  _ __ | |_ __ _(_)_ __   ___  __| | | ____|_  ____ _ _ __ ___  _ __ | | ___  ___   / _ \|  _ \ 
+ \___ \ / _ \ | |_ _____| |   / _ \| '_ \| __/ _` | | '_ \ / _ \/ _` | |  _| \ \/ / _` | '_ ` _ \| '_ \| |/ _ \/ __| | | | | |_) |
+  ___) |  __/ |  _|_____| |__| (_) | | | | || (_| | | | | |  __/ (_| | | |___ >  < (_| | | | | | | |_) | |  __/\__ \ | |_| |  _ < 
+ |____/ \___|_|_|        \____\___/|_| |_|\__\__,_|_|_| |_|\___|\__,_| |_____/_/\_\__,_|_| |_| |_| .__/|_|\___||___/  \___/|_| \_\
+                                                                                                 |_|                              
+  ____                 _   _           _   _   _             ____                                                                 
+ |  _ \ _ __ __ _  ___| |_(_) ___ __ _| | | | | |___  ___   / ___|__ _ ___  ___  ___                                              
+ | |_) | '__/ _` |/ __| __| |/ __/ _` | | | | | / __|/ _ \ | |   / _` / __|/ _ \/ __|                                             
+ |  __/| | | (_| | (__| |_| | (_| (_| | | | |_| \__ \  __/ | |__| (_| \__ \  __/\__ \                                             
+ |_|   |_|  \__,_|\___|\__|_|\___\__,_|_|  \___/|___/\___|  \____\__,_|___/\___||___/                                             
+********************************************************************************************************************************************************************************************************************************                                                                                                                               
+
+
+  ____                     __  _     _           _ _   _       _   _                 
+/ ___|___  _ __  ___     / / | |   (_)_ __ ___ (_) |_(_) __ _| |_(_) ___  _ __  ___ 
+| |   / _ \| '_ \/ __|   / /  | |   | | '_ ` _ \| | __| |/ _` | __| |/ _ \| '_ \/ __|
+| |__| (_) | | | \__ \  / /   | |___| | | | | | | | |_| | (_| | |_| | (_) | | | \__ \
+\____\___/|_| |_|___/ /_/    |_____|_|_| |_| |_|_|\__|_|\__,_|\__|_|\___/|_| |_|___/    
+
+It’s not wise to be very proud of your own opinion, if you can’t state the arguments for the other side
+better than your opponents. This is a great mental discipline." - Charlie Munger
+****************************************************************************************************************
+
+
+
+
+_____              _                  _             
+|  ___|___    ___  | |_  _ __    ___  | |_  ___  ___ 
+| |_  / _ \  / _ \ | __|| '_ \  / _ \ | __|/ _ \/ __|
+|  _|| (_) || (_) || |_ | | | || (_) || |_|  __/\__ \
+|_|   \___/  \___/  \__||_| |_| \___/  \__|\___||___/
+****************************************************************************************************************
+CLI Tools
+  size: `size my_program_after_the_assembler`
+https://stackoverflow.com/questions/7718299/whats-an-object-file-in-c
+

@@ -1,0 +1,23 @@
+{
+  //https://code.visualstudio.com/docs/cpp/config-clang-mac
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build with Clang",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-stdlib=libc++",
+        "hello-world.c",
+        "-o",
+        "helloworld.out",
+        "--debug"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
