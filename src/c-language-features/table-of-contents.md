@@ -30,14 +30,14 @@
 - [ ] `union`
 - [ ] `typedef`
 
-#### Type/storage modifiers
-- [ ] `auto`
+#### Type/storage modifiers (https://www.geeksforgeeks.org/storage-classes-in-c/)
+- [ ] `auto` (rarely used):  the default for variables in function's or block.
 - [ ] `const`
 - [ ] `else`
-- [ ] `extern`
+- [ ] `extern` (common)
 - [ ] `inline (since C99)`
 - [ ] `register`
-- [ ] `static`
+- [ ] `static` (common): 
 - [ ] `volatile`
 
 #### Preprocessor macros (prefixed with '#')

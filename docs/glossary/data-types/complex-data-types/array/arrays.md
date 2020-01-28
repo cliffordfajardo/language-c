@@ -54,24 +54,27 @@ int main () {
   return 0;
 }
 ```
+
 1. 
-We allocated a block of memory big enough to store 3 integers.
-An integer is 4bytes (32bits) and our array size is 3. 3 * 4 = 12bytes of consequtive memory will be set aside for our use.
+We allocated a continguous block of memory big enough to store 3 integers.
+An integer data type uses 4bytes (32bits).
+3 * 4 = 12bytes of memory will be set aside for our use.
 
 2.
-The variable name `grades` is assigned to the block of memory
-more specifically, the variable `grades` is assigned a pointer to the address in memory pointing to the 1st element of the array
+The variable name `grades` is assigned to the block of memory.
+More specifically, the variable `grades` is assigned a pointer to the address in memory pointing to the 1st element of the array.
 
 3.
-When we index a the grades array like so `grades[0]`, C will look at where `grades` is stored in memory (AKA the first element of `grades`)
-and use that index number inside the bracket as the number of steps in the memory block to jump to.
+When we index a the grades array like so `grades[0]`, C will look at `grades` location in memory (AKA the first element of `grades`)
+and uses that index number inside the bracket as the number of steps in the memory block to jump to.
 So if we access:
--  `grades[2]` C will jump 8 bytes (2 steps x 4 bytes, which is the size of an integer data type)
+- `grades[2]` C will jump 8 bytes (2 steps x 4 bytes, which is the size of an integer data type)
 - `grades[500]` it will jump 2000 bytes (500 steps x 4 bytes) past the beginning of the memory block
 
 
 
 ### Memory Layout of an Array of Structs
+
 ```c
 #include <stdio.h>
 int main () {
@@ -97,4 +100,8 @@ int main () {
 }
 ```
 
+<img src="../../../../images/array-of-structs-memory-representation.png">
+
+
+### References
 - https://brilliant.org/practice/memory-layout/?p=9
