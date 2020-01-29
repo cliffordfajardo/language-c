@@ -1,0 +1,1 @@
+https://www.educative.io/courses/learn-c-from-scratch/7XPMyExnzzA

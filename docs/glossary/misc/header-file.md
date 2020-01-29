@@ -29,3 +29,6 @@ int main(void) {
   return EXIT_SUCCESS;
 }
 ```
+
+## Resources
+- http://umich.edu/~eecs381/handouts/CHeaderFileGuidelines.pdf

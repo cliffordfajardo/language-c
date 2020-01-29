@@ -1,5 +1,5 @@
 # Buffer
-
+https://www.educative.io/edpresso/what-is-a-buffer-in-c
 
 ### What is a buffer?
 
