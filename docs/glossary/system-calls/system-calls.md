@@ -1,9 +1,21 @@
+# System Calls
+### What are system calls?
+A system call is a low level function that request's the operating to do something.
+In high level languages, you rarely think about this or interact with these syscalls directly,
+however most of the common functions you use to:
+- read, write from or to {disk, standard in, out, error, memory}
+- making a network request
+
+all use system calls under the hood. When you make a system call you hand control to the operating system's kernal for a brief moment
+then after it's done, it hands the control back to you.
 https://www.quora.com/What-is-the-difference-between-functions-fread-and-read
 
+### Resources
+- easy explanation: https://www.youtube.com/watch?v=2AmP7Pse4U0
 
 
-
-
+- https://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture24.pdf
+- VISUAL: https://www.guru99.com/system-call-operating-system.html
 
 
 

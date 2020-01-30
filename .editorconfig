@@ -20,6 +20,9 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
+[Makefile]
+indent_style = tab
+
 [*.js]
 quote_type = single
 curly_bracket_next_line = false

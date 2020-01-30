@@ -1,0 +1,3 @@
+clean:
+  @echo "Cleaning up"
+  rm -rf *.txt*

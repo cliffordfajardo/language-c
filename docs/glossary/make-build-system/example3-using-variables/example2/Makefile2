@@ -1,0 +1,25 @@
+# Usage:
+# make        # compile all binary
+# make clean  # remove ALL binaries and objects
+
+.PHONY = all clean
+
+CC = gcc                        # compiler to use
+LINKERFLAG = -lm
+
+SRCS := hello.c
+BINS := hello1
+
+all: hello1
+
+hello: hello.o
+  @echo "Checking.."
+  gcc -lm hello1.o -o hello
+
+hello1.o: hello.c
+  @echo "Creating object.."
+  gcc -c hello.c
+
+clean:
+  @echo "Cleaning up..."
+  rm -rvf hello.o hello
