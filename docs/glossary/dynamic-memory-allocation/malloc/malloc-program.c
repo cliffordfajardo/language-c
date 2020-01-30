@@ -1,9 +1,3 @@
-# Malloc
-`malloc` is used to allocate memory on the heap at runetime, similar to `calloc`, except it's takes 1 argument.
-
-Any time you use `malloc` don't forget to use `free` later
-
-```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,7 +23,3 @@ int main(void) {
   free(my_list_of_dates);
   return 0;
 }
-```
-
-### Related
-https://softwareengineering.stackexchange.com/a/113566/220249
