@@ -122,3 +122,4 @@ this is accomplished via the keyword `struct`
 
 ### Memory Layout of Struct
 - https://brilliant.org/practice/memory-layout/?p=7
+- https://www.youtube.com/watch?v=grk4QUDveFw

@@ -2,6 +2,8 @@
 We are going to cover a few useful features that we can use with make files.
 
 
+BREAK THIS DOWN: https://www.youtube.com/watch?v=G5dNorAoeCM
+
 ### Wildcards
 Assume we had the following files in our directory: `hello1.c` and `hello2.c`.
 We can use the `wildcard` function to expand a set of comma separated results. If we had the following Makefile:
