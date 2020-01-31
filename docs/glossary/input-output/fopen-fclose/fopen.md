@@ -27,3 +27,9 @@ int main () {
    return(0);
 }
 ```
+
+
+### fopen vs open
+- `fopen` is c standard library function, while `open` is a system call.
+- `fopen` offers us buffered IO, which is faster than `open` which is non-buffered.
+- `fopen` is portable (C standard library is on almost every platform), while `open` is environment specific. For example, C standard library on Window's will have `fopen` but under the hood instead of using `open` (a POSIX system call for unix-based systems) it will use another system call name

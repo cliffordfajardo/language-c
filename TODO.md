@@ -146,3 +146,24 @@ while I'm learning about NodeJS.........perhaps tackle the NAPI?
 
 Call outs. As always, if you get stuck consider
 - reading the man pages, reasoning about it in pseudo code for a brief moment then googling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion:
+
+Where to go from here:
+
+Books
+- The Linux Programming Interface
+- OSTEP
