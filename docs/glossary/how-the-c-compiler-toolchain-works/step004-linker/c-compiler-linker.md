@@ -19,4 +19,5 @@ clang -c my_program.c
 
 
 # Related
+- see `library-creation/static-library`
 https://www.coursera.org/learn/writing-running-fixing-code/supplement/zy2it/linking

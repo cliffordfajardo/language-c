@@ -11,5 +11,4 @@ https://www.google.com/search?q=dynamic+vs+static+linked+libraries&safe=active&s
 
 
 Use this an an example and take snapshots
-https://www.geeksforgeeks.org/static-vs-dynamic-libraries/
 https://www.geeksforgeeks.org/static-and-dynamic-linking-in-operating-systems/
