@@ -12,7 +12,7 @@ void *my_thread_function(void *x) {
   printf("Hi from thread %d!\n", thread_id);
   
   static int static_var = 0;
-  global_var++;
+  global_var++; // updating this global variable. When we do, all other threads will see this reflected because threads share the same memory mappings (code, data, files)
   static_var++;
 
   return NULL;
