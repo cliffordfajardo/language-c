@@ -6,7 +6,7 @@ void write_message(char name[]) {
 }
 
 int main() {
-  write_message((char *)"Dave");
-  write_message((char *)"Victoria");
+  write_message((char *) "Dave");
+  write_message((char *) "Victoria");
   return 0;
 }

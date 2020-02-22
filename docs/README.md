@@ -8,18 +8,31 @@ I created fully self contained runnable example programs with explaining of what
 C has been around for 30 years so I'm surmise this documentation could at least last me a but of time; I can always update it anyways.
 
 
-Table of Contents
+# Table of Contents
+### Modules/splitting code examples
+- `projects/repl/stage-3`
 
 
-## Video
-- Google engineers talking about the cost of large functions: https://youtu.be/rHIkrotSwcc?t=1832
-- "how I program C"  ... 35:20 - https://youtu.be/443UNeGrFoM?t=2124
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Videos
+- See [Videos.md]("../docs/VIDEOS.md");
 
 ### Tools
-- http://pythontutor.com/
-- Godbolt
-- https://repl.it/languages/c?lite=&classroom_template=&outputonly=&fileName=
-- https://en.wikibooks.org/wiki/C_Programming
+- See [TOOLS.md]("../docs/TOOLS.md");
 
 
 # Whats the value proposition of this course if knowledge is out there?
