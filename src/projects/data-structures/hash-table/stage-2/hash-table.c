@@ -52,7 +52,7 @@ void print_hash_table(){
       printf("%i:\n", i);
     }
     else {
-      printf("%i:%s\n", i, hash_table[i]->name);
+      printf("%i: %s\n", i, hash_table[i]->name);
     }
   }
   printf("--HASH_TABLE_END---\n");
@@ -97,50 +97,66 @@ person *hash_table_delete(char *name) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 int main(){
   init_hash_table();
 
   person Ana = {.name="Ana", .age=10};
   person Bob = {.name="Bob", .age=11};
   person Cal = {.name="Cal", .age=12};
+  person Dan = {.name="Dan", .age=13};
+  person Eve = {.name="Eve", .age=14};
+  person Fez = {.name="Fez", .age=15};
+  person Gey = {.name="Gey", .age=16};
+  person Han = {.name="Han", .age=17};
+  person Ian = {.name="Ian", .age=18};
+  person Jan = {.name="Jan", .age=19};
+  person Kal = {.name="Kal", .age=20};
+
 
   hash_table_insert(&Ana); // why doesnt 'ana' just work? By passing 'ana` we're passing a struct. Instead we want to pass a pointer.
   hash_table_insert(&Bob);
   hash_table_insert(&Cal);
+  hash_table_insert(&Dan);
+  hash_table_insert(&Eve);
+  hash_table_insert(&Fez);
+  hash_table_insert(&Gey);
+  hash_table_insert(&Han);
+  hash_table_insert(&Ian);
+  hash_table_insert(&Jan);
+  hash_table_insert(&Kal);
 
   print_hash_table();
 
   printf("Ana => %u\n", hash_fn("Ana"));
   printf("Bob => %u\n", hash_fn("Bob"));
   printf("Cal => %u\n", hash_fn("Cal"));
-  printf("Ana => %u\n", hash_fn("Ana"));
+  printf("Dan => %u\n", hash_fn("Dan"));
+  printf("Eve => %u\n", hash_fn("Eve"));
+  printf("Fez => %u\n", hash_fn("Fez"));
+  printf("Gey => %u\n", hash_fn("Gey"));
+  printf("Han => %u\n", hash_fn("Han"));
+  printf("Gey => %u\n", hash_fn("Gey"));
+  printf("Ian => %u\n", hash_fn("Ian"));
+  printf("Jan => %u\n", hash_fn("Jan"));
+  printf("Kal => %u\n", hash_fn("Kal"));
 
 
-  person *tmp1 = hash_table_lookup("Bob");
-  if(tmp1 == NULL) {
-    printf("Not found!\n");
-  } else {
-    printf("Found value %s\n", tmp1->name);
-  }
 
-  person *tmp2 = hash_table_lookup("Janet");
-  if(tmp2 == NULL) {
-    printf("Not found!\n");
-  } else {
-    printf("Found value %s\n", tmp2->name);
-  }
+  // person *tmp1 = hash_table_lookup("Bob");
+  // if(tmp1 == NULL) {
+  //   printf("Not found!\n");
+  // } else {
+  //   printf("Found value %s\n", tmp1->name);
+  // }
 
-  hash_table_delete("Bob");
+  // person *tmp2 = hash_table_lookup("Janet");
+  // if(tmp2 == NULL) {
+  //   printf("Not found!\n");
+  // } else {
+  //   printf("Found value %s\n", tmp2->name);
+  // }
+
+  // hash_table_delete("Bob");
   print_hash_table();
 }
 
